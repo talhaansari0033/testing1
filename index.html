@@ -1,31 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Meri Simple Website</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f2f2f2;
-            padding: 50px;
-        }
-        h1 {
-            color: #333;
-        }
-        p {
-            font-size: 18px;
-            color: #555;
-        }
-        img {
-            width: 300px;
-            margin-top: 20px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GreenLeaf Gardening Services - My Digital Kritika</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f0fff0;
+      color: #333;
+    }
+
+    header {
+      background: #4CAF50;
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    nav {
+      background: #388e3c;
+      text-align: center;
+      padding: 1rem 0;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1587300003388-59208cc962cb') center/cover no-repeat;
+      color: white;
+      padding: 5rem 2rem;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      text-shadow: 2px 2px 4px #000;
+    }
+
+    .content {
+      padding: 2rem;
+    }
+
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      padding: 1.5rem;
+      max-width: 300px;
+      text-align: center;
+    }
+
+    .card h3 {
+      color: #4CAF50;
+    }
+
+    .cta {
+      text-align: center;
+      margin: 3rem 0;
+    }
+
+    .cta button {
+      background: #4CAF50;
+      color: white;
+      padding: 1rem 2rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .cta button:hover {
+      background: #388e3c;
+    }
+
+    footer {
+      background: #2e7d32;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      .services {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
 </head>
 <body>
-    <h1>Welcome to My Website</h1>
-    <p>Yeh meri pehli simple HTML website hai.</p>
-    <img src="https://via.placeholder.com/300" alt="Sample Image">
+  <header>
+    <h1>GreenLeaf Gardening Services</h1>
+    <p>We make your garden glow!</p>
+  </header>
+
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <h1>Professional Gardening & Landscaping</h1>
+    <p>Trusted, Local & Affordable</p>
+  </section>
+
+  <section class="content" id="services">
+    <h2 style="text-align:center;">Our Services</h2>
+    <div class="services">
+      <div class="card">
+        <h3>Lawn Care</h3>
+        <p>Mowing, trimming, and fertilizing to keep your lawn healthy.</p>
+      </div>
+      <div class="card">
+        <h3>Planting & Landscaping</h3>
+        <p>Beautify your garden with our expert planting services.</p>
+      </div>
+      <div class="card">
+        <h3>Hedge Trimming</h3>
+        <p>Shaping hedges and shrubs to perfection.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta" id="contact">
+    <h2>Get a Free Quote Today!</h2>
+    <button onclick="contactUs()">Contact Us</button>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 GreenLeaf Gardening - My Digital Kritika. All rights reserved. | Email: info@mydigitalkritika.info | Phone: +1 234 567 8900</p>
+  </footer>
+
+  <script>
+    function contactUs() {
+      alert("Thank you for your interest! Please email us at info@mydigitalkritika.info or call +1 234 567 8900.");
+    }
+  </script>
 </body>
 </html>
